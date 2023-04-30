@@ -1,4 +1,14 @@
 {
+    "privileges": [
+        {
+            "name": "WebAccess",
+            "essential": true
+        },
+        {
+            "name": "ExportContent",
+            "essential": true
+        }
+    ],
     "dataRoles": [
         {
             "displayName": "Category",

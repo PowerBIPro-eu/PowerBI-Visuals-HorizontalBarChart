@@ -845,12 +845,6 @@ export class BarChart implements IVisual {
             valuesRect.remove()
             textValues.remove()
         }
-        else {
-            let valuesRect = bars.selectAll("rect.valuesRect")
-            let textValues = bars.selectAll("text.bar-value")
-            valuesRect.remove()
-            textValues.remove()
-        }
 
         this.tooltipServiceWrapper.addTooltip(this.barContainer.selectAll(".bar"),
             (tooltipEvent: ITooltipEventArgs<IBarChartDataPoint>) => this.getTooltipData(tooltipEvent.data),
